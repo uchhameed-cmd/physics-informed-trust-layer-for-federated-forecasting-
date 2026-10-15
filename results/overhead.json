@@ -1,0 +1,92 @@
+{
+ "n_params": 26064,
+ "update_bytes": 104256,
+ "pqc": {
+  "ml_kem_768_keygen_ms": [
+   0.10025250048784073,
+   0.1255590489563474
+  ],
+  "ml_kem_768_encaps_ms": [
+   0.11583749892452033,
+   0.14206240120984148
+  ],
+  "ml_kem_768_decaps_ms": [
+   0.14300899965746794,
+   0.16941220083026567
+  ],
+  "ml_dsa_44_sign_ms": [
+   0.6363624997902662,
+   1.710306749919255
+  ],
+  "ml_dsa_44_verify_ms": [
+   0.19483500000205822,
+   0.21836880032424233
+  ],
+  "aes256gcm_encrypt_update_ms": [
+   0.014714999451825861,
+   0.01742879949233611
+  ],
+  "aes256gcm_decrypt_update_ms": [
+   0.013332500202523079,
+   0.016204400526476093
+  ],
+  "sha3_update_ms": [
+   0.24116499935189495,
+   0.46532915002899244
+  ],
+  "sizes_bytes": {
+   "kem_pk": 1184,
+   "kem_ct": 1088,
+   "dsa_pk": 1312,
+   "dsa_sig": 2420,
+   "header": 54,
+   "aead_overhead": 16
+  }
+ },
+ "classical": {
+  "x25519_exchange_ms": [
+   0.03717799972946523,
+   0.05157159985174076
+  ],
+  "ecdsa_p256_sign_ms": [
+   0.027441999918664806,
+   0.03518890025588921
+  ],
+  "ecdsa_p256_verify_ms": [
+   0.08793449978838908,
+   0.11387540043870104
+  ],
+  "sizes_bytes": {
+   "x25519_pk": 32,
+   "ecdsa_sig": 71,
+   "ecdsa_pk": 33
+  }
+ },
+ "per_update_overhead_bytes_pqc": 2490,
+ "per_update_overhead_bytes_classical": 141,
+ "per_session_setup_bytes_pqc": 2272,
+ "freshness_test": {
+  "accepted": 680,
+  "expected": 680,
+  "replays_rejected": 1343,
+  "replays_sent": 1343,
+  "tampered_rejected": 40,
+  "tampered_sent": 40
+ },
+ "ledger": {
+  "validators": 4,
+  "f": 1,
+  "quorum": 3,
+  "messages_per_block": 29,
+  "cpu_ms_median": 13.880816000892082,
+  "cpu_ms_p95": 22.48236199993698,
+  "block_body_bytes": 1462,
+  "vote_bytes": 19360,
+  "modelled_latency_ms": {
+   "1": 16.880816000892082,
+   "20": 73.88081600089208,
+   "80": 253.88081600089208
+  },
+  "note": "3 message delays (pre-prepare, prepare, commit); RTT values are assumptions"
+ }
+}

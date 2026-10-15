@@ -1,0 +1,36 @@
+rolling trust_none {'cost': 99512.15881574297, 'violations': 283, 'vmin': 0.925442413340674}
+rolling fedavg_none {'cost': 99271.52990091054, 'violations': 268, 'vmin': 0.9228251495636233}
+rolling median_none {'cost': 99301.37070389127, 'violations': 263, 'vmin': 0.9252332718927458}
+rolling fedavg_signflip {'cost': 112906.62171286927, 'violations': 578, 'vmin': 0.92895313462242}
+rolling trust_signflip {'cost': 99705.2905273693, 'violations': 266, 'vmin': 0.9228343717213414}
+honest {'cost': 98055.74405279134, 'violations': 467, 'imbalance': 442575.3542398363, 'phantom_kwh': 0.0, 'honest_trimmed_kwh': 0.0}
+inflated {'cost': 103939.55343704029, 'violations': 651, 'imbalance': 514654.76189160225, 'phantom_kwh': 110662.3156928817, 'honest_trimmed_kwh': 0.0}
+inflated_physics {'cost': 100276.90505510065, 'violations': 603, 'imbalance': 481418.5550820603, 'phantom_kwh': 67212.36325912946, 'honest_trimmed_kwh': 18221.54924307963}
+inflated_trust_coupled {'cost': 98326.8128770807, 'violations': 507, 'imbalance': 455569.8814721395, 'phantom_kwh': 27321.731643309322, 'honest_trimmed_kwh': 18221.54924307963}
+honest_trust_coupled {'cost': 97689.14517456299, 'violations': 449, 'imbalance': 445145.9964342919, 'phantom_kwh': 0.0, 'honest_trimmed_kwh': 26234.804169493487}
+{
+ "inflated_phi0.0": {
+  "attacker_gain_usd": -9108.795814187568,
+  "honest_extra_cost_usd": 830.8446753337485
+ },
+ "inflated_phi1.0": {
+  "attacker_gain_usd": -33225.914901541226,
+  "honest_extra_cost_usd": 830.844675333763
+ },
+ "inflated_physics_phi0.0": {
+  "attacker_gain_usd": -4916.603254377227,
+  "honest_extra_cost_usd": 858.4983557926316
+ },
+ "inflated_physics_phi1.0": {
+  "attacker_gain_usd": -17587.8063315048,
+  "honest_extra_cost_usd": -2138.0385997356207
+ },
+ "inflated_trust_coupled_phi0.0": {
+  "attacker_gain_usd": -1553.3904698171464,
+  "honest_extra_cost_usd": -820.9874429060001
+ },
+ "inflated_trust_coupled_phi1.0": {
+  "attacker_gain_usd": -8118.776782543879,
+  "honest_extra_cost_usd": 298.8883311008394
+ }
+}

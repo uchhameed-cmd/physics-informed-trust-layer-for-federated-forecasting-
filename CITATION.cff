@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Q-TRUST: physics-based trust evidence for federated energy communities"
+authors:
+  - family-names: Muqeet
+    given-names: Hafiz Abdul
+  - family-names: Ahmad
+    given-names: Jameel
+  - family-names: Hameed
+    given-names: Abdul
+license: MIT
+preferred-citation:
+  type: article
+  title: "Physics-based trust evidence for federated energy communities: what it detects, what it costs, and what it is worth in the market"
+  authors:
+    - family-names: Muqeet
+      given-names: Hafiz Abdul
+    - family-names: Ahmad
+      given-names: Jameel
+    - family-names: Hameed
+      given-names: Abdul
+  year: 2026
+  journal: "under review"
